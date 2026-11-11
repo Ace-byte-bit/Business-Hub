@@ -1,0 +1,35 @@
+.jobs-hero { max-width: 700px; text-align: center; }
+.jobs-hero h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 0.5rem; }
+.jobs-hero p { color: var(--text-dim); font-size: 1.05rem; }
+
+.verify-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+  padding: 12px 18px;
+  background: rgba(255, 213, 74, 0.12);
+  border: 1px solid rgba(255, 213, 74, 0.4);
+  border-radius: 12px;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+.verify-prompt[hidden] { display: none; }
+.verify-prompt .btn { padding: 8px 18px; font-size: 0.8rem; }
+
+.filters { display: flex; gap: 10px; flex-wrap: wrap; width: 100%; max-width: 1000px; }
+.filters input { flex: 2; min-width: 220px; }
+.filters select { flex: 1; min-width: 180px; cursor: pointer; }
+
+.results-count {
+  width: 100%;
+  max-width: 1000px;
+  font-size: 0.85rem;
+  color: var(--text-mute);
+  margin-top: -1rem;
+}
+
+#jobsList { max-width: 1000px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.no-results { color: var(--text-mute); grid-column: 1 / -1; text-align: center; padding: 2rem; }

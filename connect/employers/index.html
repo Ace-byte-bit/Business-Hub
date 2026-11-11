@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Post a remote job or advertise on Business Hub Rwanda — reach verified workers nationwide.">
+  <title>Hire / Advertise — Business Hub Rwanda</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-root="../">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Business Hub <span>Rwanda</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../jobs/index.html">Find Jobs</a>
+      <a href="index.html" class="active">Hire / Advertise</a>
+      <a href="../verify/index.html">Verify Identity</a>
+    </nav>
+    <div id="identityBadge" class="identity-badge"></div>
+  </header>
+
+  <main class="page">
+
+    <section class="emp-hero">
+      <h1>Hire verified remote workers</h1>
+      <p>
+        Every worker on Business Hub Rwanda has proven their identity.
+        Post a job, run an ad, and reach talent in all 30 districts.
+      </p>
+    </section>
+
+    <section class="why">
+      <div class="why-item">
+        <span class="why-num">📢</span>
+        <h3>Commercial ad reach</h3>
+        <p>Your job appears as a featured ad on the homepage and job board.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">🪪</span>
+        <h3>Verified workforce</h3>
+        <p>No ghost applicants — only workers whose national ID is verified.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">🌍</span>
+        <h3>Rural-first reach</h3>
+        <p>Workers from Nyabihu to Bugesera. Remote-ready and trust-checked.</p>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <h2>Advertising Plans</h2>
+      <div class="plan-grid">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p class="price"><span>15,000</span> RWF</p>
+          <p class="duration">7 days · 1 job listing</p>
+          <ul>
+            <li>✓ Standard job board listing</li>
+            <li>✓ Verified employer badge</li>
+          </ul>
+        </div>
+        <div class="plan featured">
+          <span class="plan-badge">POPULAR</span>
+          <h3>Featured</h3>
+          <p class="price"><span>40,000</span> RWF</p>
+          <p class="duration">30 days · 3 job listings</p>
+          <ul>
+            <li>✓ Homepage featured placement</li>
+            <li>✓ Priority in search results</li>
+            <li>✓ Weekly applicant reports</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p class="price"><span>90,000</span> RWF</p>
+          <p class="duration">30 days · Unlimited listings</p>
+          <ul>
+            <li>✓ All Featured benefits</li>
+            <li>✓ Homepage hero advertisement</li>
+            <li>✓ Direct call with CL.Connect team</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="inquiry">
+      <h2>Post a job or advertise</h2>
+      <form id="employerForm" class="emp-form" novalidate>
+        <div class="field">
+          <label for="company">Company name</label>
+          <input type="text" id="company" placeholder="e.g. Kigali Tech Collective" autocomplete="organization" required>
+          <span class="hint" id="companyHint"></span>
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" placeholder="you@company.rw" autocomplete="email" required>
+          <span class="hint" id="emailHint"></span>
+        </div>
+        <div class="field">
+          <label for="plan">Plan</label>
+          <select id="plan" required>
+            <option value="" disabled selected>Choose a plan</option>
+            <option value="Basic">Basic — 15,000 RWF</option>
+            <option value="Featured">Featured — 40,000 RWF</option>
+            <option value="Premium">Premium — 90,000 RWF</option>
+          </select>
+          <span class="hint" id="planHint"></span>
+        </div>
+        <div class="field">
+          <label for="jobTitle">Job title</label>
+          <input type="text" id="jobTitle" placeholder="e.g. Customer Support (Remote)" required>
+          <span class="hint" id="jobTitleHint"></span>
+        </div>
+        <div class="field">
+          <label for="description">Job description</label>
+          <textarea id="description" rows="5" placeholder="Describe the role, requirements, and salary range…" required></textarea>
+          <span class="hint" id="descriptionHint"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="../about.html">About &amp; Trust</a>
+      <a href="../jobs/index.html">Jobs</a>
+      <a href="index.html">Advertise</a>
+    </nav>
+    <p>© <span id="year"></span> Business Hub Rwanda</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/identity.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

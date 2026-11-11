@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Business Hub Rwanda — Remote jobs for rural Rwandans, with verified digital identity.">
+  <meta name="theme-color" content="#11998e">
+  <title>Business Hub Rwanda — Remote Jobs, Verified</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-root="">
+
+  <header class="site-header">
+    <a href="index.html" class="brand">Business Hub <span>Rwanda</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="jobs/index.html">Find Jobs</a>
+      <a href="employers/index.html">Hire / Advertise</a>
+      <a href="verify/index.html">Verify Identity</a>
+    </nav>
+    <div id="identityBadge" class="identity-badge"></div>
+  </header>
+
+  <main class="page">
+
+    <section class="hero">
+      <span class="hero-kicker">Remote work · Rural Rwanda · Verified people</span>
+      <h1>Real jobs. Real people.<br>Wherever you live.</h1>
+      <p class="hero-sub">
+        Business Hub Rwanda connects rural Rwandans to remote work through
+        commercial advertising — with every worker and employer
+        backed by a verified digital identity.
+      </p>
+      <div class="hero-actions">
+        <a href="jobs/index.html" class="btn btn-primary">Browse Remote Jobs</a>
+        <a href="verify/index.html" class="btn btn-outline">Get Verified First</a>
+      </div>
+    </section>
+
+    <section class="pillars" aria-label="How it works">
+      <div class="pillar">
+        <span class="pillar-num">1</span>
+        <h2>Verify once</h2>
+        <p>Prove who you are with a national ID. Get a trust badge that follows you across the platform.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">2</span>
+        <h2>Apply anywhere</h2>
+        <p>Browse remote jobs from employers who can see your verified status — no scams, no ghost listings.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">3</span>
+        <h2>Employers advertise</h2>
+        <p>Businesses pay to feature jobs. That ad revenue keeps the platform free for workers.</p>
+      </div>
+    </section>
+
+    <section class="featured-jobs">
+      <div class="section-head">
+        <h2>Featured Remote Jobs</h2>
+        <a href="jobs/index.html" class="see-all">See all →</a>
+      </div>
+      <div id="featuredJobs" class="job-grid"></div>
+    </section>
+
+    <section class="stats" aria-label="Platform statistics">
+      <div class="stat"><span class="stat-num" id="statWorkers">—</span><span class="stat-label">Verified Workers</span></div>
+      <div class="stat"><span class="stat-num" id="statJobs">—</span><span class="stat-label">Remote Jobs</span></div>
+      <div class="stat"><span class="stat-num">30</span><span class="stat-label">Districts Reached</span></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="about.html">About &amp; Trust</a>
+      <a href="jobs/index.html">Jobs</a>
+      <a href="employers/index.html">Advertise</a>
+    </nav>
+    <p>© <span id="year"></span> Business Hub Rwanda · Remote opportunity, verified trust.</p>
+  </footer>
+
+  <script src="shared/ui.js"></script>
+  <script src="shared/identity.js"></script>
+  <script src="shared/jobs-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

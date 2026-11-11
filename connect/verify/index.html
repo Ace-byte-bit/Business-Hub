@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Verify your Rwandan national ID to unlock remote job applications on Business Hub Rwanda.">
+  <title>Verify Identity — Business Hub Rwanda</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-root="../">
+
+  <header class="site-header">
+    <a href="../index.html" class="brand">← Business Hub <span>Rwanda</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../jobs/index.html">Find Jobs</a>
+      <a href="../employers/index.html">Hire / Advertise</a>
+      <a href="index.html" class="active">Verify Identity</a>
+    </nav>
+    <div id="identityBadge" class="identity-badge"></div>
+  </header>
+
+  <main class="page">
+
+    <div class="verify-wrap">
+
+      <!-- Success state -->
+      <div id="verifiedState" class="verified-state" hidden>
+        <div class="checkmark">✓</div>
+        <h1>You're verified</h1>
+        <p class="sub" id="verifiedName">—</p>
+        <p class="meta" id="verifiedMeta">—</p>
+        <div class="verified-actions">
+          <a href="../jobs/index.html" class="btn btn-primary">Browse Jobs</a>
+          <button type="button" id="resetBtn" class="btn btn-outline">Verify a different ID</button>
+        </div>
+      </div>
+
+      <!-- Form state -->
+      <div id="verifyPanel">
+        <div class="verify-header">
+          <h1>Verify your digital identity</h1>
+          <p class="sub">
+            We match your national ID number and name against the national registry.
+            Verification is free, takes 30 seconds, and unlocks job applications.
+          </p>
+        </div>
+
+        <form id="idForm" class="verify-form" novalidate>
+          <div class="field">
+            <label for="fullName">Full name (as on your ID)</label>
+            <input type="text" id="fullName" placeholder="e.g. Aline Uwase" autocomplete="name" required>
+            <span class="hint" id="nameHint"></span>
+          </div>
+          <div class="field">
+            <label for="idNumber">National ID number</label>
+            <input type="text" id="idNumber" placeholder="16-digit ID number" inputmode="numeric" maxlength="16" autocomplete="off" required>
+            <span class="hint" id="idHint"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Verify Identity</button>
+        </form>
+
+        <div class="demo-note">
+          <strong>Demo IDs (for testing):</strong>
+          <code>1199070012345678 · Aline Uwase</code>
+          <code>1199580098765432 · Jean Mugisha</code>
+          <code>1200170055555555 · Claudine Mukamana</code>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="../about.html">About &amp; Trust</a>
+      <a href="../jobs/index.html">Jobs</a>
+      <a href="../employers/index.html">Advertise</a>
+    </nav>
+    <p>© <span id="year"></span> CL.Connect Rwanda</p>
+  </footer>
+
+  <script src="../shared/ui.js"></script>
+  <script src="../shared/identity.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

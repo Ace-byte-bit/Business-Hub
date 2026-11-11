@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Business Hub Rwanda — remote jobs, digital identity trust, and how the platform works.">
+  <title>About &amp; Trust — Business Hub Rwanda</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="shared/theme.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body data-root="">
+
+  <header class="site-header">
+    <a href="index.html" class="brand">← Business Hub <span>Rwanda</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="jobs/index.html">Find Jobs</a>
+      <a href="employers/index.html">Hire / Advertise</a>
+      <a href="verify/index.html">Verify Identity</a>
+    </nav>
+    <div id="identityBadge" class="identity-badge"></div>
+  </header>
+
+  <main class="page">
+    <article class="about-card">
+
+      <h1>About Business Hub Rwanda</h1>
+      <p class="lead">
+        Business Hub Rwanda is a remote-work marketplace built for rural Rwandans —
+        funded by commercial advertising and anchored in verified digital identity.
+      </p>  
+
+      <section>
+        <h2>Why we exist</h2>
+        <p>
+          Unemployment sits at 13.4%, with youth hardest hit. Over 72% of
+          Rwandans live in rural areas where local jobs are scarce — but
+          remote work can cross that distance. The problem? Scams, ghost
+          listings, and distrust keep rural workers out.
+        </p>
+        <p>Business Hub Rwanda fixes this with two things:</p>
+        <ul>
+          <li><strong>Verified digital identity</strong> — workers prove their national ID, employers get trusted applicants.</li>
+          <li><strong>Commercial advertising</strong> — employers pay to feature jobs. That revenue keeps the platform free for workers.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How trust works</h2>
+        <p>
+          When you verify, we check your 16-digit national ID number and full
+          name against the national registry. If they match, you get a badge
+          that shows up everywhere on Business Hub Rwanda.
+        </p>
+        <p>
+          Employers who advertise are also checked — so you never apply to a
+          company that doesn't exist. Every job listing shows the
+          <span class="trust-badge">✓ Verified employer</span> badge only
+          after we confirm the business.
+        </p>
+      </section>
+
+      <section>
+        <h2>How we stay free for workers</h2>
+        <p>
+          Employers pay for advertising plans (starting at 15,000 RWF).
+          That revenue covers the platform. Workers never pay to browse,
+          apply, or get verified.
+        </p>
+      </section>
+
+      <section>
+        <h2>What we don't do</h2>
+        <ul>
+          <li>❌ No data selling — your ID number never leaves the verification check.</li>
+          <li>❌ No unverified job listings — every employer is checked.</li>
+          <li>❌ No pay-to-apply — workers stay free.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Built in Rwanda</h2>
+        <p>
+          No frameworks, no template builders. Hand-coded HTML, CSS, and
+          JavaScript. Designed to work on low-end phones and slow connections.
+        </p>
+      </section>
+
+      <div class="meta">
+        <p>Kigali, Rwanda</p>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="about.html">About &amp; Trust</a>
+      <a href="jobs/index.html">Jobs</a>
+      <a href="employers/index.html">Advertise</a>
+    </nav>
+    <p>© <span id="year"></span> CL.Connect Rwanda</p>
+  </footer>
+
+  <script src="shared/ui.js"></script>
+  <script src="shared/identity.js"></script>
+  <script>
+    setFooterYear();
+    Identity.renderBadge('identityBadge');
+  </script>
+</body>
+</html>
